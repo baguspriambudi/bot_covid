@@ -6,6 +6,9 @@ const { leave } = Stage;
 const axios = require('axios');
 const Markup = require('telegraf/markup');
 const dotenv = require('dotenv');
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 3000;
 
 dotenv.config();
 
@@ -103,4 +106,7 @@ bot.on('text', (ctx, next) => {
   ctx.reply('Hello, if you want to select the menu press /help');
   return next();
 });
+
 bot.startPolling();
+
+app.listen(PORT, console.log(`listening on PORT ${PORT}`));
