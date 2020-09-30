@@ -4,8 +4,10 @@ const Stage = require('telegraf/stage');
 const Scene = require('telegraf/scenes/base');
 const { leave } = Stage;
 const axios = require('axios');
-const Extra = require('telegraf/extra');
 const Markup = require('telegraf/markup');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 // scene
 const country = new Scene('indonesia');
@@ -80,7 +82,7 @@ stage.command('cancel', leave());
 stage.register(country);
 stage.register(provinsi);
 
-const bot = new telegraf('1031885320:AAEC1XR3GkTb6X9u02_qCgvMbywpvZ6dkZg');
+const bot = new telegraf(process.env.TOKEN);
 const startMessage = `
 WELCOME TO THE COVID BOT
 please press /help to view menu
