@@ -110,7 +110,7 @@ bot.on('text', (ctx, next) => {
 app.get('/', (req, res) => {
   res.status(200).json({
     status: 200,
-    message: 'system cashier service up and running',
+    message: 'system bot service up and running',
     environment: process.env.NODE_ENV,
     timestamp: new Date(),
   });
