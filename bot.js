@@ -107,8 +107,6 @@ bot.on('text', (ctx, next) => {
   return next();
 });
 
-bot.startPolling();
-
 app.get('/', (req, res) => {
   res.status(200).json({
     status: 200,
@@ -117,5 +115,7 @@ app.get('/', (req, res) => {
     timestamp: new Date(),
   });
 });
+
+bot.startPolling();
 
 app.listen(PORT, console.log(`listening on PORT ${PORT}`));
