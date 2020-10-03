@@ -109,4 +109,13 @@ bot.on('text', (ctx, next) => {
 
 bot.startPolling();
 
+app.get('/', (req, res) => {
+  res.status(200).json({
+    status: 200,
+    message: 'system cashier service up and running',
+    environment: process.env.NODE_ENV,
+    timestamp: new Date(),
+  });
+});
+
 app.listen(PORT, console.log(`listening on PORT ${PORT}`));
