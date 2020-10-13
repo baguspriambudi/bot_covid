@@ -1,6 +1,6 @@
 # Telegram Bot
 ## Introduction
-[Node.JS](https://nodejs.org/en/) | [Express](https://expressjs.com/) | [MongoDB](https://www.mongodb.com/)<br/>
+[Node.JS](https://nodejs.org/en/) | [Express](https://expressjs.com/)<br/>
 This is my repository built with Node JS, Framework Express and MongoDB, for Telegram Bot. on this bot the user can view information on covid data in Indonesia
 ## Requirements
 1. `npm` (node package manager)<br/>
