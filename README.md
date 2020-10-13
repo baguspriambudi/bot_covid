@@ -13,3 +13,6 @@ This is my repository built with Node JS, Framework Express and MongoDB, for Tel
 3. Open your terminal or cmd and type `npm install`<br/>
 4. Run server, type `npm run dev`
 ## Documentation
+1. [displays all covid data in Indonesia](https://user-images.githubusercontent.com/26361824/95816546-947e2200-0d49-11eb-97cf-4779e3044fa9.jpg)
+2. [displays all covid data by province](https://user-images.githubusercontent.com/26361824/95816803-225a0d00-0d4a-11eb-9803-7e19af267005.jpg)
+
